@@ -25,7 +25,7 @@
 }
 
 .cardItem > input {
-   margin-top: 10px;
+   margin-top: 5px;
    width: 100%;
     height: 30px;
     border-radius: 5px;
@@ -51,11 +51,20 @@ outline: none;
  }
 
  .icon {
-    position:relative;
-    align-items: center;
-    justify-content: center;
+    padding-top: 10px;;
  }
-   
+
+ .btn {
+    position: absolute;
+    top:93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   background-color: inherit;
+   color:#3d9cff;
+   font-size: 14px;
+   cursor: pointer;
+   text-decoration: underline;
+ }
    
 
 

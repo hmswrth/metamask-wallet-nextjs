@@ -3,7 +3,7 @@ import formStyle from '../styles/Form.module.css';
 import { FcRefresh } from 'react-icons/fc'
 import { IconContext } from "react-icons";
 
-function Form() {
+function Form({getModal}) {
 
    const [nep, setNep] = useState('')
    const [busd, setBusd] = useState('')
@@ -28,6 +28,10 @@ function Form() {
       })
    }
 
+   const handleWallet = () => {
+      getModal(true)
+   }
+
    return (
       <div className={formStyle.container}>
          <div className={formStyle.card}>
@@ -42,7 +46,13 @@ function Form() {
                      value={nep}
                   />
                </div>
-               {/* <div className={formStyle.cardItem}><FcRefresh /></div> */}
+               <IconContext.Provider value={{ className: 'react-icons', size: '1.5rem' }}>
+                  <div className={formStyle.icon}>
+                     <center>
+                        <FcRefresh />
+                     </center>
+                  </div>
+               </IconContext.Provider>
                {/* <IconContext.Provider value={{ className: 'react-icons', size: '1.5rem' }}>
                   <div className={formStyle.icon}>
                      <FcRefresh />
@@ -57,7 +67,9 @@ function Form() {
                      value={busd} />
                </div>
                <div>
-                  <a >check wallet details</a>
+                  <center>
+                     <a className={formStyle.btn} type='button' onClick={handleWallet}>Check Wallet Details</a>
+                  </center>
                </div>
             </form>
          </div>

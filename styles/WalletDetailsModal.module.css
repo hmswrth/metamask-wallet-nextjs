@@ -1,0 +1,15 @@
+.tableContainer {
+   display: inline-block;
+   margin: 30px 30px 30px 30px;
+   padding: 20px 20px 20px 20px;
+}
+
+.btn{
+   width: 100%;
+    text-transform: uppercase;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px !important;
+}

@@ -1,0 +1,31 @@
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+}
+
+.title {
+   font-size: 1rem;
+   font-weight: 500;
+}
+
+.message {
+   color: red;
+   font-size: 0.8rem;
+}
+.btn1 {
+    width: 50%;
+    text-transform: uppercase;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px !important;
+}
+
+.btn2 {
+   width:50%;
+   text-transform: uppercase;
+   border-radius: 6px !important;
+}
